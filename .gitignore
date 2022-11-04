@@ -26,4 +26,6 @@ replay_pid*
 bin/
 *.txt
 src/output
+output
 .settings/
+.obsidian/

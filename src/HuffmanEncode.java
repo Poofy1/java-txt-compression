@@ -12,7 +12,13 @@ public class HuffmanEncode {
 			BufferedReader f = new BufferedReader(new FileReader(in));
 			int value = f.read();
 			while(value != -1) {
-				frequencies[value]++;
+				try {
+					frequencies[value]++;
+				}
+				catch(Exception e) {
+					System.out.println("Incompatible character code: " + value + "\nOnly input UTF-8 chars between 0-128");
+					System.exit(0);
+				}
 				value = f.read();
 				count++;
 			}
@@ -20,7 +26,7 @@ public class HuffmanEncode {
 			
 		}
 		catch (IOException e) {
-		
+			System.out.println(e);
 		}
 		
 		//build the heap
