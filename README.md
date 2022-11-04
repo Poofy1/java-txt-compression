@@ -2,7 +2,7 @@
 
 ## Description
 
-This program can encode and decode a txt file using a Huffman tree. Currently only supports .txt input file with UTF-8 charector codes between 0-128.
+This program can perform lossless encode and decode of a txt file using a Huffman tree. Currently only supports .txt input file with UTF-8 charector codes between 0-128.
 
 ### Executing program
 
@@ -13,15 +13,15 @@ The Driver method accepts 3 arguments
 
 For encoding, the input must be a .txt and output will be a binary file and vice versa for decoding
 
-
-
-* Running encode examples
+Running encode examples
 ```
 java Driver e input.txt decoded_file
 
 java Driver d decoded_file output.txt
 ```
 
+# Results 
+book.txt test file with the size of 805KB was encoded to the size of 451KB
 
 ## License
 
